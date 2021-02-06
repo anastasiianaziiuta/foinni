@@ -1,11 +1,10 @@
-@media (max-width:768px) {
-    .header {
-        &__logo {
-            img {
-                max-width: 100px;
-                
-            }
+@media (max-width:420px) {
+    .navigation {
+        &__item {
+            margin-right: 15px !important;
+            font-size: 10px !important;
         }
+
     }
 }
 @media (max-width:576px){
@@ -42,3 +41,14 @@
     
     }
 }
+@media (max-width:768px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 100px;
+                
+            }
+        }
+    }
+}
+
