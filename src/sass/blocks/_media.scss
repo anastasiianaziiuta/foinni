@@ -1,4 +1,11 @@
-@media (max-width:991px){
+@media (max-width:1201px){
+    .service {
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width:993px){
     .promo {
         &__descr {
             margin-right: 5px;
@@ -7,7 +14,7 @@
     }
 
 }
-@media (max-width:768px) {
+@media (max-width:769px) {
     .header {
         &__logo {
             img {
@@ -25,7 +32,7 @@
         }
     }
 }
-@media (max-width:576px){
+@media (max-width:577px){
     .header {
         &__logo {
             position: absolute;
@@ -70,13 +77,33 @@
         }
     }
 }
-@media (max-width:435px) {
+@media (max-width:436px) {
     .navigation {
         &__item {
             margin-right: 13px ;
             font-size: 10px ;
         }
 
+    }
+    .service {
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__item {
+            min-width: 280px;
+            img {
+                margin: 23px auto;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        &__descr {
+            font-size: 12px;
+        }
     }
 }
 
