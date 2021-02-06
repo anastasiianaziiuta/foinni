@@ -5,9 +5,12 @@ window.addEventListener('DOMContentLoaded', function (){
         closeMenu = document.querySelector('.js-close');
 
         openMenu.addEventListener('click', () =>{
-            mobileMenu.classList.add('navigation_active');
-            openMenu.style.display = 'none';
-            closeMenu.style.display = 'block';
+            if ( window.innerWidth <577 ) {
+                mobileMenu.classList.add('navigation_active');
+                openMenu.style.display = 'none';
+                closeMenu.style.display = 'block';
+            }
+
         });
 
         closeMenu.addEventListener('click', () => {

@@ -1,0 +1,33 @@
+.promo {
+    min-height: 682px;
+    background: url('../images/bg/header.jpg') center ( center / cover ) no-repeat;
+    &__line {
+        height: 1px;
+        width: 100%;
+        opacity: 0.5;
+        background-color: #8f8e91;
+    }
+    &__title {
+        display: block;
+        margin: 0px auto;
+        margin-top: 258px;
+        font-family: 'Exo', sans-serif;
+        font-size: 48px;
+        color: #fffcf4;
+        text-align: center;
+        span {
+            font-weight: 900;
+            color: $main-color;
+        }
+    }
+    &__descr {
+        margin-top: 24px;
+        margin-bottom: 258px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 2;
+        text-align: center;
+        color: #ffffff;
+    }
+}
