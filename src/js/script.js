@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', function (){
     // Mobile menu
     let mobileMenu = document.querySelector('#js-navigation'),
-        openMenu = document.querySelector('#js-logo'),
+        openMenu = document.querySelector('#js-menu'),
         closeMenu = document.querySelector('.js-close');
 
         openMenu.addEventListener('click', () =>{
-            if ( window.innerWidth <577 ) {
+            if ( window.innerWidth <=577 ) {
                 mobileMenu.classList.add('navigation_active');
                 openMenu.style.display = 'none';
                 closeMenu.style.display = 'block';
@@ -20,4 +20,7 @@ window.addEventListener('DOMContentLoaded', function (){
             
         });
 
+    // Service item image
+ 
+        
 });

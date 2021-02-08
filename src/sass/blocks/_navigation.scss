@@ -4,9 +4,14 @@
     align-items: center;
     background-color: #000000;
     height: 119px;
+    &__menu {
+        display: none;
+    }
+    &__close {
+        display: none;
+    }
 }
 .navigation {
-    
     display: flex;
     justify-content: flex-end;
     align-items: center;

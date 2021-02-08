@@ -1,3 +1,10 @@
+.fas {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #454546;
+    margin-top: 36px;
+}
 .service {
     // padding-right: 235px;
     // padding-left: 215px;
@@ -28,17 +35,18 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+ 
     &__item {
-
         margin-top: 46px;
         min-width: 358px;
         min-height: 250px;
-        border: solid 0.5px #8f8e91;
+        border: solid 0.7px #8f8e91;
         cursor: pointer;
-        img {
-            display: block;
-            margin: 34px auto;
-        }
+        transition: all 0.5s;
+        // img {
+        //     display: block;
+        //     margin: 34px auto;
+        // }
         p {
             margin-top: 18px;
             font-family: 'Roboto', sans-serif;
@@ -49,7 +57,12 @@
         }
         &:hover {
             border: solid 0.5px $main-color;
-            
+            p {
+                color: $main-color;
+            }
+            .fas {
+                color: $main-color;
+            }
         }
     }
     &__descr {
