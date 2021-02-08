@@ -1,0 +1,66 @@
+.contact {
+    margin-top: 127px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    min-height: 499px;
+    background: url('../images/bg/unfooter.jpg') center (center / cover) no-repeat;
+    &__title {
+        margin-top: 39px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fffcf4;
+    }
+    &__form {
+        margin-top: 27px;
+        margin-left: 225px;
+        input {
+            display: inline-block;
+            margin-right: 21px;
+            margin-bottom: 28px;
+            width: 438px;
+            height: 50px;
+            border: solid 0.5px #ffffff;
+            background-color: rgba(69, 69, 70, 0.5);
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+            font-style: italic;
+            color: #fffcf4;
+            outline: none !important;
+            &::-moz-placeholder {
+                color: #fff;
+            }
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+        }
+        textarea {
+            margin-top: 30px;
+            border: solid 0.5px #ffffff;
+            background-color: rgba(69, 69, 70, 0.5);
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+            font-style: italic;
+            color: #fffcf4;
+            outline: none !important;
+            resize: none;
+            &::-moz-placeholder {
+                color: #fff;
+            }
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+        }
+        input[type="submit"] {
+            display: block;
+            margin-left: 370px;
+            width: 195px;
+            height: 50px;
+            background-color: $main-color;
+        }           
+    }
+}

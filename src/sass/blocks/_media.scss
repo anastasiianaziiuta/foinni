@@ -4,6 +4,21 @@
             justify-content: space-around;
         }
     }
+    .team__items {
+        flex-wrap: wrap;
+    }
+    .price__items{
+        flex-wrap: wrap;
+    }
+    .contact__form {
+        margin-left: 140px;
+        textarea {
+            width: 600px;
+        }
+        input[type="submit"] {
+            margin-left: 200px;
+        }
+    }
 }
 @media (max-width:993px){
     .promo {
@@ -15,9 +30,6 @@
     .team {
         &__hover {
             width: 269px;
-        }
-        &__items{
-            flex-wrap: wrap;
         }
         &__item {
             margin-top: 5px;
@@ -55,6 +67,15 @@
     }
     .price__items {
         flex-wrap: wrap;
+    }
+    .contact__form {
+        margin-left: 45px;
+        textarea {
+            width: 500px;
+        }
+        input[type="submit"] {
+            margin-left: 150px;
+        }
     }
 }
 @media (max-width:577px){
@@ -126,6 +147,14 @@
         flex-direction: column;
         align-items: center;
     }
+    .contact__form{
+        input, textarea {
+            width: 350px;
+        }
+        input[type="submit"] {
+            margin-left: 80px;
+        }
+    }
 }
 @media (max-width:436px) {
     .navigation {
@@ -167,6 +196,14 @@
     }
     .portfolio__content_photo {
         width: 100%;
+    }
+    .contact__form{
+        input, textarea {
+            width: 230px;
+        }
+        input[type="submit"] {
+            margin-left: 20px;
+        }
     }
 }
 
