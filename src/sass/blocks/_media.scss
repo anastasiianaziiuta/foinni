@@ -137,8 +137,14 @@
         margin-top: 10px;
     }
     .portfolio__item {
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 16px;
+    }
+    .portfolio__items {
+        flex-wrap: wrap;
+    }
+    .portfolio__content_photo {
+        width: 100%;
     }
 }
 
