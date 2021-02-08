@@ -1,0 +1,100 @@
+.footer {
+    padding-top: 39px;
+    min-height: 400px;
+    background-color: #0b0a0a;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__about {
+        width: 318px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+        color: #8f8e91;
+    }
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            text-transform: capitalize;
+            color: #8f8e91;
+            &:hover {
+                color:$main-color;
+            }
+        }
+    }
+    .find_wrapper {
+        margin-top: 19px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: solid 2px #8f8e91;
+        &:hover {
+            border-color:$main-color;
+            .fab {
+                color: $main-color;
+            }
+        }
+        .fab {
+            color: #8f8e91;
+        }
+
+    }
+    &__subscribe {
+        margin-top: 16px;
+        input {
+            display: block;
+            margin-bottom: 17px;
+            width: 250px;
+            height: 42px;
+            border: solid 1px #838484;
+            background-color: rgba(69, 69, 70, 0.5);
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: italic;
+            color: #fff;
+            outline: none !important;
+            &::-moz-placeholder {
+                color: #fff;
+            }
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+        }
+        input[type="submit"]{
+            display: block;
+            width: 105px;
+            height: 37px;
+            background-color: $main-color;
+        }
+    }
+    p {
+        margin-top: 100px;
+        font-family: 'Roboto', submit;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        color: #8f8e91;
+    }
+}
