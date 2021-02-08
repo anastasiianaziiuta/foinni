@@ -1,8 +1,11 @@
-
+body {
+    background-color: #fffcf4
+}
 @import "blocks/variables";
 @import "blocks/navigation";
 @import "blocks/promo";
 @import "blocks/service";
 @import "blocks/team";
+@import "blocks/portfolio";
 @import "blocks/media";
 

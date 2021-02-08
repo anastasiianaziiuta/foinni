@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function (){
+    
     // Mobile menu
     let mobileMenu = document.querySelector('#js-navigation'),
         openMenu = document.querySelector('#js-menu'),
@@ -20,7 +21,35 @@ window.addEventListener('DOMContentLoaded', function (){
             
         });
 
-    // Service item image
- 
+        // Portfolio tabs
+        // let tab = document.querySelectorAll('.js-item'),
+        //     info = document.querySelector('.js-items'),
+        //     tabContent = document.querySelectorAll('.js-content-photo');
+
+        //     function hideTabContent(a) {
+        //         for ( let i=a; i<tabContent.length; i++ ) {
+        //             tabContent[i].style.display = 'none';
+        //         }
+        //     }
+        //     hideTabContent(6);
+
+        //     function showTabContent(b) {
+        //         if (tabContent[b].style.display = 'none') {
+        //             tabContent[b].style.display = 'block';
+        //         }
+        //     }
+
+        //     info.addEventListener('click', function(e) {
+        //         let target = e.target;
+        //         if (target && target.classList.contains('js-item')){
+        //             for ( let i=0; i<tab.length; i++ ) {
+        //                 if (target == tab[i]) {
+        //                     hideTabContent(0);
+        //                     showTabContent(i);
+        //                     break;
+        //                 }
+        //             }
+        //         }
+        //     });
         
 });
