@@ -42,11 +42,13 @@
         max-width: 269px;
         max-height: 355px;
         cursor: pointer;
+        transition: 0.5s;
         img {
             width: 269px;
             height: 355px;
         }
         &:hover {
+            transition: 0.5s;
             .team__hover{
                opacity: 1;
             }

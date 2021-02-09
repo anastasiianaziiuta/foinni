@@ -22,34 +22,34 @@ window.addEventListener('DOMContentLoaded', function (){
         });
 
         // Portfolio tabs
-        // let tab = document.querySelectorAll('.js-item'),
-        //     info = document.querySelector('.js-items'),
-        //     tabContent = document.querySelectorAll('.js-content-photo');
 
-        //     function hideTabContent(a) {
-        //         for ( let i=a; i<tabContent.length; i++ ) {
-        //             tabContent[i].style.display = 'none';
-        //         }
-        //     }
-        //     hideTabContent(6);
+        const filterBox = document.querySelectorAll('.js-content-photo');
 
-        //     function showTabContent(b) {
-        //         if (tabContent[b].style.display = 'none') {
-        //             tabContent[b].style.display = 'block';
-        //         }
-        //     }
+        document.querySelector('.js-items').addEventListener('click', e => {
+            if(e.target.tagName!== 'LI') {
+                return false;
+            } else {
+                let filterClass = e.target.dataset['f'];
 
-        //     info.addEventListener('click', function(e) {
+                filterBox.forEach (elem => {
+                    elem.classList.remove('hide');
+                    if (!elem.classList.contains(filterClass)){
+                        elem.classList.add('hide');
+                    }
+                });
+            }
+        });
+        new WOW().init();
+
+        //Mobile events
+        // let serviceItems = document.querySelector('.js-service-items');
+
+        //     serviceItems.addEventListener('click', e => {
         //         let target = e.target;
-        //         if (target && target.classList.contains('js-item')){
-        //             for ( let i=0; i<tab.length; i++ ) {
-        //                 if (target == tab[i]) {
-        //                     hideTabContent(0);
-        //                     showTabContent(i);
-        //                     break;
-        //                 }
-        //             }
-        //         }
+        //         target.classList.remove('active');
+        //         this.classList.add('active');
+                
         //     });
-        
+  
+
 });

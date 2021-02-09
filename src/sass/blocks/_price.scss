@@ -16,7 +16,7 @@
         width: 268px;
         min-height: 392px;
         border: solid 0.5px #8f8e91;
-        transition: 0.3s all;
+        transition: all 0.3s;
         cursor: pointer;
         p {
             font-family: 'Roboto', sans-serif;
@@ -24,6 +24,7 @@
             font-weight: 100;
             text-align: center;
             color: #8f8e91;
+           
         }
         &_summ {
             padding-top: 21px;
@@ -47,6 +48,7 @@
             }
         }
         &:hover {
+            
             border: solid 0.5px $main-color;
             .price__item_summ{
                 background-color: $main-color;
