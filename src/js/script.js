@@ -39,17 +39,26 @@ window.addEventListener('DOMContentLoaded', function (){
                 });
             }
         });
+
+        //Service min
+
+        let acc = document.getElementsByClassName('js-price-title');
+        
+
+            for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    if (this.classList.contains('active')) {
+                        this.classList.remove('active');
+                    } else {
+                        for (el of acc){
+                            el.classList.remove('active');
+                        }
+                        this.classList.add('active');
+                    }
+
+               });
+            }
+           
+
         new WOW().init();
-
-        //Mobile events
-        // let serviceItems = document.querySelector('.js-service-items');
-
-        //     serviceItems.addEventListener('click', e => {
-        //         let target = e.target;
-        //         target.classList.remove('active');
-        //         this.classList.add('active');
-                
-        //     });
-  
-
 });

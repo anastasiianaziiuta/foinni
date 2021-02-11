@@ -117,11 +117,11 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: 50%;
-        height: 100vh;
+        width: 100%;
+        height: 80vh;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         z-index: 1;
         background-color: rgba(0, 0, 0, 0.7);
         transition: all 0.6s;
@@ -147,9 +147,15 @@
     .portfolio__items {
         flex-wrap: wrap;
     }
-    .price__items {
-        flex-direction: column;
-        align-items: center;
+    .price {
+        min-height: 350px;
+        &__item {
+            display: none;
+        }
+        &__items-min{
+            margin-top: 20px;
+            display: block;
+        }
     }
     .contact__form{
         input, textarea {
@@ -168,9 +174,13 @@
 }
 @media (max-width:436px) {
     .navigation {
+        width: 100%;
+        height: 80vh;
+        align-items: center;
+
         &__item {
             margin-right: 13px ;
-            font-size: 10px ;
+            font-size: 13px ;
         }
 
     }
@@ -194,6 +204,10 @@
             font-size: 12px;
         }
     }
+    .team__items{
+        justify-content: center;
+        align-items: center;
+    }
     .team__item {
         margin-top: 10px;
     }
@@ -207,6 +221,17 @@
     .portfolio__content_photo {
         width: 100%;
     }
+    // .price {
+    //     min-height: 350px;
+    //     &__item {
+    //         display: none;
+    //     }
+    //     &__items-min{
+    //         margin-top: 20px;
+    //         display: block;
+    //     }
+    // }
+
     .contact__form{
         input, textarea {
             width: 230px;
