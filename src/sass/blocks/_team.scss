@@ -1,16 +1,35 @@
 .team {
     min-height: 723px;
     &__hover{
-
         position: absolute;
         padding-top: 177px;
         width: 273px;
-        height: 391px;
+        height: 100%;
         background-color: rgba(29, 222, 133, 0.8);
         opacity: 0;
         z-index: 2;
-        
+        &_name {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            color: #fffcf4;
+        }
+        &_work {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            text-align: center;
+            color: #fffcf4;
+        }
     }
+        
     &__social{
         margin-top: 90px;
         padding-left: 98px;

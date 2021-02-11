@@ -28,8 +28,10 @@
         }
     }
     .team {
-        &__hover {
-            width: 269px;
+        &__hover_work {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -40%);
         }
         &__item {
             margin-top: 5px;
@@ -157,6 +159,7 @@
     .portfolio__items {
         flex-wrap: wrap;
     }
+
     .price {
         min-height: 350px;
         &__item {
@@ -215,12 +218,41 @@
             font-size: 12px;
         }
     }
-    .team__items{
-        justify-content: center;
-        align-items: center;
+    .team__hover{
+        width: 100%;
+        height: 100%;
+    }
+    .team__hover_name {
+        top: 35%;
+        transform: translate(-50%, -65%);
+    }
+    .team__hover_work {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+    }
+    .team__social {
+        padding-left: 45px;
+        padding-top: 7px;
+        position: absolute;
+        bottom: 2%;
+        left: 0%;
+        width: 100%;
     }
     .team__item {
         margin-top: 10px;
+        width: 50%;
+        height: 50%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .team__descr{
+        width: 100%;
+    }
+    .portfolio {
+        margin-top: 0;
     }
     .portfolio__item {
         margin-right: 20px;
