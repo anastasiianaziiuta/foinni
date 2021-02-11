@@ -44,7 +44,7 @@
     .price__btn {
         margin: 60px 35px;
     }
-
+    
 }
 @media (max-width:769px) {
     .header {
@@ -80,6 +80,16 @@
     .footer__about {
         width: 135px;
         font-size: 12px;
+    }
+
+    .modal-order {
+        width: 100%;
+        form{
+            input {
+                width: 100%;
+            }
+        }
+
     }
 }
 @media (max-width:577px){
@@ -171,6 +181,7 @@
     .footer__find {
         margin-top: 10px;
     }
+  
 }
 @media (max-width:436px) {
     .navigation {
@@ -221,17 +232,6 @@
     .portfolio__content_photo {
         width: 100%;
     }
-    // .price {
-    //     min-height: 350px;
-    //     &__item {
-    //         display: none;
-    //     }
-    //     &__items-min{
-    //         margin-top: 20px;
-    //         display: block;
-    //     }
-    // }
-
     .contact__form{
         input, textarea {
             width: 230px;

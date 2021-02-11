@@ -60,5 +60,29 @@ window.addEventListener('DOMContentLoaded', function (){
             }
            
 
+         //Modal
+         let btnMenu = document.querySelectorAll('.js-price-btn'),
+             overlayMenu = document.querySelector('.js-overlay'),
+             closeOrder = document.querySelector('.js-close-order');
+ 
+                btnMenu.forEach(item=>{
+                    item.addEventListener('click', () =>{
+                        overlayMenu.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    });
+                });
+
+                function closeModalWindow (){
+                    overlayMenu.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+
+                closeOrder.addEventListener('click', ()=> {
+                
+                    closeModalWindow();
+                });
+
+
+
         new WOW().init();
 });
