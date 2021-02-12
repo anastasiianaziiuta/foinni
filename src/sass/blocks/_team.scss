@@ -99,4 +99,10 @@
         text-align: center;
         color: #fffcf4;
     }
+    &__item.show &__hover  {
+        opacity: 1;
+    }
+    &__item.show .team__descr{
+        opacity: 0;
+    }
 }

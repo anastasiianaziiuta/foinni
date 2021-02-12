@@ -21,6 +21,31 @@ window.addEventListener('DOMContentLoaded', function (){
             
         });
 
+
+        //Touch event
+
+        // let allItems = document.querySelector('.js-team-items'),
+
+         let visibleItem = document.querySelectorAll('.js-team-item');
+             
+        
+
+            for (let i = 0; i < visibleItem.length; i ++ ){
+                visibleItem[i].addEventListener('click', function() {
+                    if (this.classList.contains('show')){
+                        this.classList.remove('show');
+                    } else {
+                        for (el of visibleItem) {
+                            el.classList.remove('show');
+                        }
+                        this.classList.add('show');
+                    }
+
+                });
+            }
+        
+
+
         // Portfolio tabs
 
         const filterBox = document.querySelectorAll('.js-content-photo');
@@ -55,7 +80,6 @@ window.addEventListener('DOMContentLoaded', function (){
                         }
                         this.classList.add('active');
                     }
-
                });
             }
            
