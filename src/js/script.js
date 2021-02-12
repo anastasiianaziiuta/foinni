@@ -26,10 +26,9 @@ window.addEventListener('DOMContentLoaded', function (){
 
         // let allItems = document.querySelector('.js-team-items'),
 
-         let visibleItem = document.querySelectorAll('.js-team-item');
-             
-        
-
+         let visibleItem = document.querySelectorAll('.js-team-item'),
+             hideItem = document.querySelectorAll('.js-team-hover');
+  
             for (let i = 0; i < visibleItem.length; i ++ ){
                 visibleItem[i].addEventListener('click', function() {
                     if (this.classList.contains('show')){
@@ -40,7 +39,13 @@ window.addEventListener('DOMContentLoaded', function (){
                         }
                         this.classList.add('show');
                     }
-
+                });
+            }
+            for (let i = 0; i < hideItem.length; i ++){
+                hideItem[i].addEventListener('click', function(){
+                    if (visibleItem[i].contains('show')){
+                        visibleItem[i].remove('show');
+                    }
                 });
             }
         
