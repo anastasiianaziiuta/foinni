@@ -26,9 +26,8 @@ window.addEventListener('DOMContentLoaded', function (){
 
         // let allItems = document.querySelector('.js-team-items'),
 
-         let visibleItem = document.querySelectorAll('.js-team-item'),
-             hideItem = document.querySelectorAll('.js-team-hover');
-  
+         let visibleItem = document.querySelectorAll('.js-team-item');
+             
             for (let i = 0; i < visibleItem.length; i ++ ){
                 visibleItem[i].addEventListener('click', function() {
                     if (this.classList.contains('show')){
@@ -41,16 +40,7 @@ window.addEventListener('DOMContentLoaded', function (){
                     }
                 });
             }
-            for (let i = 0; i < hideItem.length; i ++){
-                hideItem[i].addEventListener('click', function(){
-                    if (visibleItem[i].contains('show')){
-                        visibleItem[i].remove('show');
-                    }
-                });
-            }
-        
-
-
+         
         // Portfolio tabs
 
         const filterBox = document.querySelectorAll('.js-content-photo');
@@ -112,6 +102,23 @@ window.addEventListener('DOMContentLoaded', function (){
                 });
 
 
+          // PageUp
+        let pageUp = document.querySelector('.js-pageup');
+
+        window.addEventListener('scroll', showPageUp);
+        
+            function showPageUp(){
+                let scrolled = window.pageYOffset,
+                    coords = document.documentElement.clientHeight;
+                
+                    if (scrolled > coords) {
+                        pageUp.style.display = 'block';
+                    }
+                    if (scrolled < coords) {
+                        pageUp.style.display = '';
+                    }
+            }
+        showPageUp();
 
         new WOW().init();
 });
